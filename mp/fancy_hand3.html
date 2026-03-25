@@ -262,9 +262,9 @@
       push();
       translate(smoothedPos[id].x + gx, smoothedPos[id].y + gy);
       rotate(smoothedAngle[id]);
-      noFill(); stroke(mainColor); strokeWeight(2);
+      noFill(); stroke(255, 0, 0); strokeWeight(2);
       arc(0, 0, 130, 130, -40, 220);
-      for (let i = 0; i < 12; i++) { rotate(30); stroke(mainColor, 100); line(50, 0, 58, 0); }
+      for (let i = 0; i < 12; i++) { rotate(30); stroke(255, 0, 0, 160); line(50, 0, 58, 0); }
       fill(255, 50, 80); noStroke(); triangle(75, 0, 65, -5, 65, 5);
       pop();
       fill(255); textAlign(CENTER); textSize(24); text(`${int(smoothedAngle[id])}°`, smoothedPos[id].x + gx, smoothedPos[id].y + gy + 10);
@@ -317,7 +317,7 @@
     }
 
     function drawScanningUI() {
-      stroke(mainColor, 60); line(0, (frameCount * 4) % height, width, (frameCount * 4) % height);
+      stroke(255, 0, 0, 60); line(0, (frameCount * 4) % height, width, (frameCount * 4) % height);
     }
 
     function windowResized() { resizeCanvas(windowWidth, windowHeight); }
