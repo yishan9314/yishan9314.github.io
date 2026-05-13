@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《可愛恐龍》：從「恐怖怪獸」到「療癒萌主」的超進化全紀錄</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kingjun: {
+                            pink: '#FF99C8',
+                            blue: '#A9DEF9',
+                            yellow: '#FCF6BD',
+                            green: '#D0F4DE',
+                            purple: '#E4C1F9',
+                            dark: '#2D3047',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'wiggle': 'wiggle 1s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        wiggle: {
+                            '0%, 100%': { transform: 'rotate(-3deg)' },
+                            '50%': { transform: 'rotate(3deg)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fdfcf0;
+            background-image: 
+                radial-gradient(#E4C1F9 1px, transparent 1px),
+                radial-gradient(#A9DEF9 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 3px solid #2D3047;
+            box-shadow: 8px 8px 0px #2D3047;
+        }
+
+        .neo-brutalism-btn {
+            border: 3px solid #2D3047;
+            box-shadow: 4px 4px 0px #2D3047;
+            transition: all 0.2s ease;
+        }
+
+        .neo-brutalism-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px #2D3047;
+        }
+
+        .kingjun-border {
+            border: 4px solid #2D3047;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .blob {
+            position: absolute;
+            z-index: -1;
+            filter: blur(40px);
+            opacity: 0.5;
+        }
+
+        h1, h2, h3 {
+            line-height: 1.2;
+        }
+        
+        ::selection {
+            background-color: #FF99C8;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-body text-kingjun-dark antialiased overflow-x-hidden">
+
+    <!-- Background Elements -->
+    <div class="blob bg-kingjun-pink w-64 h-64 top-20 -left-20 rounded-full animate-float"></div>
+    <div class="blob bg-kingjun-blue w-96 h-96 bottom-40 -right-20 rounded-full animate-float" style="animation-delay: -2s;"></div>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 lg:py-20 relative">
+        
+        <!-- Header / Banner Section -->
+        <header class="mb-16">
+            <div class="mb-4 inline-block px-4 py-1 bg-kingjun-yellow neo-brutalism-btn font-bold text-sm uppercase tracking-widest">
+                Student ID: B11208010
+            </div>
+            
+            <h1 class="font-display font-black text-4xl md:text-6xl mb-8 leading-tight">
+                《可愛恐龍》：<br/>
+                <span class="text-kingjun-pink bg-white px-2">從「恐怖怪獸」</span><br/>
+                <span class="text-kingjun-blue">到「療癒萌主」</span><br/>
+                的超進化全紀錄
+            </h1>
+
+            <div class="kingjun-border mb-12 transform -rotate-1 hover:rotate-0 transition-transform duration-500 bg-white shadow-2xl">
+                <img src='https://opal.google/board/blobs/b7891caf-131d-4f7a-8634-bfa0e93304f9' alt='Kingjun Style Dinosaur Banner' class="w-full h-auto object-cover" />
+            </div>
+        </header>
+
+        <!-- Article Introduction -->
+        <section class="glass-card p-8 md:p-12 mb-12 rounded-3xl relative">
+            <div class="absolute -top-6 -right-6 w-20 h-20 bg-kingjun-purple rounded-full flex items-center justify-center border-4 border-kingjun-dark animate-wiggle">
+                <span class="text-2xl">🦖</span>
+            </div>
+            <p class="text-xl md:text-2xl leading-relaxed font-light italic">
+                身為一個對古生物學略有涉獵，卻又在辦公桌上擺滿公仔的小型知識分子，我時常在思考一個很有趣的現象：這些曾經統治地球一億六千萬年、站在食物鏈頂端的史前巨獸，究竟是如何在人類文明的洗禮下，從令人聞風喪膽的「恐怖蜥蜴」，變成如今讓我們心甘情願掏腰包的「療癒萌主」？
+            </p>
+            <div class="mt-8 font-bold text-lg">
+                今天，我們就來聊聊恐龍這場長達百年的「形象大翻轉」。
+            </div>
+        </section>
+
+        <!-- Content Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+            
+            <!-- Point 1 -->
+            <div class="md:col-span-7 glass-card p-8 rounded-3xl border-t-8 border-t-kingjun-pink">
+                <h3 class="font-display font-black text-2xl mb-6 flex items-center">
+                    <span class="bg-kingjun-pink w-10 h-10 rounded-full flex items-center justify-center mr-3 border-2 border-kingjun-dark text-white shadow-sm">1</span>
+                    什麼？這隻 T-Rex 竟然有點萌？
+                </h3>
+                <div class="space-y-4 text-lg leading-relaxed">
+                    <p>當我們談論「可愛恐龍」時，我們實際上是在討論一種藝術上的「萌化（Moé）」轉向。這並非只是把恐龍畫小而已，其背後藏著一套精密的「可愛密碼」。</p>
+                    <div class="bg-kingjun-yellow/30 p-4 rounded-xl border-2 border-dashed border-kingjun-dark">
+                        <p><strong>二頭身的黃金比例</strong>：也就是所謂的 Chibi 風格，透過壓縮軀幹、放大頭部、縮短四肢，加上圓滾滾的肚子，原本的殺伐之氣瞬間轉化為笨拙的喜感。</p>
+                    </div>
+                    <p><strong>無辜系特徵</strong>：創作者刻意抹去了恐龍銳利的牙齒與鱗片質感，取而代之的是柔和的粉嫩配色與水汪汪的圓大眼。</p>
+                </div>
+            </div>
+
+            <!-- Point 2 -->
+            <div class="md:col-span-5 flex flex-col gap-8">
+                <div class="bg-kingjun-green glass-card p-6 rounded-3xl h-full flex flex-col justify-center">
+                    <h3 class="font-display font-black text-xl mb-4">2. 穿越時光機</h3>
+                    <ul class="space-y-4 text-sm font-bold">
+                        <li class="flex items-start gap-2">
+                            <span class="bg-white px-2 py-1 border-2 border-kingjun-dark">1914</span>
+                            <span>史上第一位恐龍明星「葛蒂」誕生。</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="bg-white px-2 py-1 border-2 border-kingjun-dark">60-80s</span>
+                            <span>《摩登原始人》Dino 走進客廳。</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="bg-white px-2 py-1 border-2 border-kingjun-dark">90s+</span>
+                            <span>耀西與巴尼奠定全球萌力。</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Point 3 -->
+            <div class="md:col-span-12 glass-card p-8 md:p-12 rounded-3xl border-l-8 border-l-kingjun-blue">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="flex-1">
+                        <h3 class="font-display font-black text-3xl mb-6">3. 不只是小孩的玩具！恐龍界的「療癒經濟學」</h3>
+                        <p class="text-lg leading-relaxed mb-6">
+                            為什麼現代成人的辦公桌上，總少不了一隻可愛恐龍？從心理學角度來看，這是一種「心理補償」。恐龍代表著一種「遙遠且安全的強大」，當它被軟化後，便成為極佳的解壓媒介。
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-2xl border-2 border-kingjun-dark">
+                                <span class="block text-2xl mb-2">🦴</span>
+                                <h4 class="font-bold mb-1 italic text-kingjun-pink">歷史原裝萌點</h4>
+                                <p class="text-sm text-gray-600">鸚鵡嘴龍圓潤的體態，讓科學與美感達成共識。</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-2xl border-2 border-kingjun-dark">
+                                <span class="block text-2xl mb-2">✨</span>
+                                <h4 class="font-bold mb-1 italic text-kingjun-blue">正能量代言人</h4>
+                                <p class="text-sm text-gray-600">耀西象徵忠誠、巴尼代表愛與分享。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Point 4 -->
+            <div class="md:col-span-6 glass-card p-8 rounded-3xl bg-kingjun-dark text-white border-none shadow-[10px_10px_0px_#FF99C8]">
+                <h3 class="font-display font-black text-2xl mb-6 text-kingjun-pink underline decoration-4 underline-offset-8">4. 萌化過頭了嗎？</h3>
+                <ul class="space-y-6">
+                    <li class="border-b border-gray-700 pb-4">
+                        <span class="block text-kingjun-yellow font-bold text-sm mb-1 uppercase tracking-tighter">Cognitive Bias</span>
+                        <p class="text-md opacity-90">將肉食龍描繪成「素食主義者」，是否誤導了對自然的理解？</p>
+                    </li>
+                    <li class="border-b border-gray-700 pb-4">
+                        <span class="block text-kingjun-blue font-bold text-sm mb-1 uppercase tracking-tighter">The Feather War</span>
+                        <p class="text-md opacity-90">科學證實的羽毛 vs 大眾偏愛的光滑皮膚審美戰爭。</p>
+                    </li>
+                    <li>
+                        <span class="block text-kingjun-green font-bold text-sm mb-1 uppercase tracking-tighter">Commercialization</span>
+                        <p class="text-md opacity-90">對生命演化的敬畏感，是否在過度商業化中流失？</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Point 5 -->
+            <div class="md:col-span-6 glass-card p-8 rounded-3xl bg-white flex flex-col justify-between">
+                <div>
+                    <h3 class="font-display font-black text-2xl mb-6">5. 未來預告：你的專屬恐龍夥伴即將上線！</h3>
+                    <p class="text-lg leading-relaxed mb-6">
+                        隨著 AR 與 AI 技術的成熟，數位萌寵將能直接在你的辦公桌上散步。但我個人最期待的是「自然萌」的回歸——記錄恐龍孵蛋、抓癢或玩耍等動物本能行為。
+                    </p>
+                </div>
+                <div class="bg-kingjun-purple/20 p-4 rounded-2xl border-2 border-kingjun-purple text-center">
+                    <p class="font-bold text-kingjun-dark">
+                        基於生物真實性的「萌點」，<br/>
+                        展現出一種與自然和諧共處的純粹美感。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Closing Section -->
+        <footer class="mt-20 text-center">
+            <div class="inline-block relative">
+                <div class="absolute -top-12 left-1/2 -translate-x-1/2 text-4xl animate-bounce">🦖</div>
+                <div class="glass-card p-8 md:p-12 rounded-[40px] max-w-2xl mx-auto">
+                    <p class="text-xl md:text-2xl font-bold leading-relaxed mb-8">
+                        無論是史前巨獸還是案頭萌寵，恐龍對人類的吸引力始終未變——那是一種對未知世界的敬畏，以及對生命力最原始的嚮往。
+                    </p>
+                    <button class="neo-brutalism-btn bg-kingjun-pink px-8 py-4 rounded-full font-black text-xl uppercase tracking-widest hover:bg-kingjun-yellow transition-colors">
+                        Stay Curious!
+                    </button>
+                </div>
+            </div>
+            
+            <div class="mt-12 flex justify-center gap-4">
+                <div class="w-4 h-4 rounded-full bg-kingjun-pink"></div>
+                <div class="w-4 h-4 rounded-full bg-kingjun-blue"></div>
+                <div class="w-4 h-4 rounded-full bg-kingjun-yellow"></div>
+                <div class="w-4 h-4 rounded-full bg-kingjun-green"></div>
+                <div class="w-4 h-4 rounded-full bg-kingjun-purple"></div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        // Subtle scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(20px)";
+            card.style.transition = "all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)";
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
